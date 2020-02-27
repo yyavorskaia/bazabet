@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>bazabet - main</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/GothaProBla.woff" as="font" type="font/woff">
+    <link rel="preload" href="fonts/GothaProBla.woff2" as="font" type="font/woff2">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="background__wrapper">
+
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <a class="page-header__logo">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="203" height="34" viewBox="0 0 203 34">
+                <image id="logo" width="203" height="34" xlink:href="data:img/png;base64,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"/>
+              </svg>
+            </a>
+            <div class="page-header__slogan">
+              <p class="page-header__text"><span>bazabet</span> - создан игроками для игроков</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="bonus">
+          <div class="container">
+            <div class="bonus__wrapper">
+              <div class="bonus__header">
+                <h1 class="bonus__title">Бонус</h1>
+                <span class="bonus__percent">100%</span>
+                <span class="bonus__deposit">на первый депозит</span>
+              </div>
+              <div class="bonus__uah"></div>
+              <div data-offset="60" class="bonus__truck parallax">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/truck-mobile.png">
+                  <img src="img/truck.png" width="580" height="480" alt="Tрактор">
+                </picture>
+              </div>
+              <div data-offset="40" class="bonus__first-player parallax">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/first-mobile.png">
+                  <img src="img/first.png" width="235" height="359" alt="Главный игрок">
+                </picture>
+              </div>
+              <div data-offset="30" class="bonus__back1 parallax">
+                <img src="img/back1.png" width="63" height="106" alt="Игрок1">
+              </div>
+              <div data-offset="30" class="bonus__back2 parallax">
+                <img src="img/back2.png" width="90" height="125" alt="Игрок2">
+              </div>
+              <div data-offset="30" class="bonus__back3 parallax">
+                <img src="img/back3.png" width="69" height="110" alt="Игрок3">
+              </div>
+              <div data-offset="30" class="bonus__back4 parallax">
+                <img src="img/back4.png" width="76" height="126" alt="Игрок4">
+              </div>
+              <div class="bonus__benefit">
+                <span class="bonus__replenish">Пополняй счет и получай</span>
+                <span class="bonus__money">в 2 раза больше денег</span>
+              </div>
+              <a class="bonus__btn flashing" id="btn" href="#">Получить бонус</a>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="container">
+            <ul class="features__list">
+              <li class="features__item features__item--registration">Регистрируйся</li>
+              <li class="features__item features__item--account">Пополняй счет</li>
+              <li class="features__item features__item--bonus">Получи бонус</li>
+            </ul>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--license">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="38" viewBox="0 0 25 38">
+                  <path fill-rule="evenodd"  fill="rgb(0, 209, 93)" id="Фигура_2" data-name="Фигура 2" class="cls-1" d="M446.5,937A12.907,12.907,0,1,0,459,949.9,12.721,12.721,0,0,0,446.5,937h0Zm0,22.722a9.826,9.826,0,1,1,9.517-9.822,9.673,9.673,0,0,1-9.517,9.822h0Zm0,0,0,4.306a13.515,13.515,0,0,1-7.412-2.209L438.456,975l7.221-6.422a1.172,1.172,0,0,1,1.665,0l7.22,6.422-0.649-13.181a13.521,13.521,0,0,1-7.413,2.209h0Zm0,0,0-15.78,0-7.094a8.751,8.751,0,1,0,8.475,8.746,8.614,8.614,0,0,0-8.475-8.746h0Zm0,12.076" transform="translate(-434 -937)"/>
+                </svg>
+                <p class="advantages__text">
+                  Лицензия<br> Министерства<br> Финансов Украины
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--betting">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                  <path fill-rule="evenodd"  fill="rgb(0, 209, 93)" class="cls-1" d="M707.07,954.233h3.935a18.923,18.923,0,0,0-2.137-7.157l-2.13,1.231-0.708-1.226,2.117-1.224a19.213,19.213,0,0,0-5.943-5.965l-1.247,2.143-1.223-.713,1.255-2.156A18.924,18.924,0,0,0,693.772,937v4h-3.538v-4a18.94,18.94,0,0,0-7.217,2.166l1.256,2.157-1.224.712L681.8,939.89a19.2,19.2,0,0,0-5.943,5.966l2.117,1.223-0.708,1.226-2.13-1.231A18.947,18.947,0,0,0,673,954.232h3.936v3.538H673a18.957,18.957,0,0,0,2.137,7.159l2.131-1.231,0.708,1.226-2.117,1.224a19.237,19.237,0,0,0,5.943,5.966l1.248-2.143,1.223,0.712-1.256,2.156a18.905,18.905,0,0,0,7.217,2.166v-4h3.538v4a18.923,18.923,0,0,0,7.217-2.166l-1.255-2.156,1.223-.712,1.247,2.143a19.2,19.2,0,0,0,5.943-5.966l-2.117-1.223,0.708-1.226,2.13,1.23A18.943,18.943,0,0,0,711,957.772h-3.936v-3.539h0Zm-15.484,6.981a1.443,1.443,0,0,1-1.441,1.441h-8.57a1.381,1.381,0,0,1-1.072-.5,1.227,1.227,0,0,1-.24-1.037,5.3,5.3,0,0,1,.649-1.609,8.006,8.006,0,0,1,3.215-2.767,22.3,22.3,0,0,0,2.623-1.662,1.846,1.846,0,0,0,.77-1.4,1.245,1.245,0,0,0-.391-0.949,1.669,1.669,0,0,0-1.21-.384,1.563,1.563,0,0,0-1.46.591,1.768,1.768,0,0,0-.19.573,1.525,1.525,0,0,1-1.519,1.167h-1.006a1.367,1.367,0,0,1-1.058-.485,1.259,1.259,0,0,1-.268-1.037,4.776,4.776,0,0,1,.672-1.756c0.895-1.364,2.471-2.056,4.686-2.056a6.781,6.781,0,0,1,4.159,1.177,3.966,3.966,0,0,1,.481,6,10.048,10.048,0,0,1-2.3,1.652l-1.208.687c-0.51.29-.91,0.526-1.2,0.7h4.436a1.443,1.443,0,0,1,1.441,1.441v0.205h0Zm10.836-1.2a0.443,0.443,0,0,0-.386.481v0.721a1.443,1.443,0,0,1-1.44,1.441h-1.028a1.443,1.443,0,0,1-1.44-1.441v-0.721a0.481,0.481,0,0,0-.48-0.481H693.5a1.443,1.443,0,0,1-1.441-1.44v-0.19a3.792,3.792,0,0,1,.675-2.016l4.475-5.925a2.641,2.641,0,0,1,1.922-.957H700.6a1.444,1.444,0,0,1,1.441,1.442v5.755a0.441,0.441,0,0,0,.385.48A1.428,1.428,0,0,1,702.422,960.012Zm-6.7-2.851h1.925a0.481,0.481,0,0,0,.48-0.48v-2.847l-2.393,3.311Z" transform="translate(-673 -937)"/>
+                </svg>
+                <p class="advantages__text">
+                  Принимаем<br> ставки 24/7
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--coefficient">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                  <path fill-rule="evenodd"  fill="rgb(0, 209, 93)" class="cls-1" d="M907.95,960.294H917.6V973H907.95V960.294ZM912.775,935l-9.224,12.589h4.4v10.479H917.6V947.589H922Zm-16.8,15.641h9.651v10.066h-9.651V950.641Zm0,12.293h9.651V973h-9.651V962.934ZM884,955.1h9.651v7.838H884V955.1Zm0,10.064h9.651V973H884v-7.838Z" transform="translate(-884 -935)"/>
+                </svg>
+                <p class="advantages__text">
+                  Высокие<br> коэффициенты
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--payouts">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="34px">
+                  <path fill-rule="evenodd"  fill="rgb(0, 209, 93)" d="M27.669,34.000 C21.411,34.000 16.338,31.743 16.338,28.958 L16.338,27.864 C16.338,27.510 16.420,27.165 16.576,26.831 C17.647,29.121 22.206,30.841 27.669,30.841 C33.131,30.841 37.691,29.121 38.762,26.831 C38.918,27.165 39.000,27.510 39.000,27.864 L39.000,28.958 C39.000,31.743 33.927,34.000 27.669,34.000 ZM27.669,28.370 C21.411,28.370 16.338,26.113 16.338,23.328 L16.338,22.235 C16.338,21.881 16.420,21.535 16.576,21.202 C17.647,23.491 22.206,25.211 27.669,25.211 C33.131,25.211 37.691,23.491 38.762,21.202 C38.918,21.535 39.000,21.880 39.000,22.235 L39.000,23.328 C39.000,26.113 33.927,28.370 27.669,28.370 ZM27.669,22.437 C21.411,22.437 16.338,20.180 16.338,17.395 L16.338,16.301 C16.338,15.947 16.420,15.602 16.576,15.269 C17.647,17.558 22.206,19.278 27.669,19.278 C33.131,19.278 37.691,17.558 38.762,15.269 C38.918,15.602 39.000,15.947 39.000,16.301 L39.000,17.395 C39.000,20.180 33.927,22.437 27.669,22.437 ZM27.669,16.808 C21.411,16.808 16.338,14.550 16.338,11.765 L16.338,10.672 C16.338,10.318 16.420,9.972 16.576,9.639 C17.647,11.928 22.206,13.649 27.669,13.649 C33.131,13.649 37.691,11.928 38.762,9.639 C38.918,9.972 39.000,10.318 39.000,10.672 L39.000,11.765 C39.000,14.550 33.927,16.808 27.669,16.808 ZM27.669,11.178 C21.411,11.178 16.338,8.921 16.338,6.136 L16.338,5.042 C16.338,2.258 21.411,0.000 27.669,0.000 C33.927,0.000 39.000,2.258 39.000,5.042 L39.000,6.136 C39.000,8.921 33.927,11.178 27.669,11.178 ZM0.000,25.935 L0.000,24.841 C0.000,24.487 0.082,24.142 0.238,23.808 C1.309,26.098 5.869,27.818 11.331,27.818 C12.427,27.818 13.486,27.748 14.489,27.618 L14.489,27.864 L14.489,28.957 C14.489,29.569 14.633,30.160 14.912,30.720 C13.786,30.886 12.583,30.977 11.331,30.977 C5.073,30.977 0.000,28.720 0.000,25.935 ZM0.000,20.305 L0.000,19.212 C0.000,18.858 0.082,18.512 0.238,18.179 C1.309,20.468 5.869,22.188 11.331,22.188 C12.427,22.188 13.486,22.118 14.489,21.989 L14.489,25.149 C13.487,25.278 12.427,25.348 11.331,25.348 C5.073,25.348 0.000,23.090 0.000,20.305 ZM0.000,14.676 L0.000,13.582 C0.000,10.797 5.073,8.540 11.331,8.540 C12.427,8.540 13.487,8.609 14.489,8.739 L14.489,19.520 C13.487,19.649 12.427,19.718 11.331,19.718 C5.073,19.718 0.000,17.461 0.000,14.676 Z"/>
+                </svg>
+                <p class="advantages__text">
+                  Гарантированные<br> выплаты
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--live">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                  <path fill-rule="evenodd"  fill="rgb(0, 209, 93)" id="Фигура_3" data-name="Фигура 3" class="cls-1" d="M1374.72,951.486a17.923,17.923,0,0,0-18.48-14.455,17.654,17.654,0,0,0-15.12,9.26,15.871,15.871,0,0,0-2.09,8.975,17.069,17.069,0,0,0,8.05,13.818,17.445,17.445,0,0,0,8.6,2.86,2.159,2.159,0,0,1,.27.056h2.18c0.67-.09,1.34-0.15,2-0.276a17.667,17.667,0,0,0,13.16-9.8,15.852,15.852,0,0,0,1.65-6.1,1.792,1.792,0,0,1,.06-0.226v-2.119C1374.91,952.812,1374.84,952.143,1374.72,951.486Zm-23.93,7.855c-0.1.007-.18,0.019-0.26,0.019-1.51,0-3.02,0-4.53,0a0.772,0.772,0,0,1-.88-0.87V949.91c0-.077.01-0.154,0.01-0.246h1.53v8.244h4.13v1.433Zm3.27,0h-1.52v-9.669h1.52v9.669Zm7.51-8.795-2.07,8.035a2.351,2.351,0,0,1-.07.262,0.686,0.686,0,0,1-.74.456,0.621,0.621,0,0,1-.62-0.5c-0.24-.879-0.47-1.76-0.7-2.641-0.47-1.772-.93-3.545-1.4-5.317-0.17-.651-0.01-1.041.49-1.154a0.826,0.826,0,0,1,.97.8l1.2,4.7c0.03,0.1.07,0.2,0.1,0.307h0.07c0.17-.665.35-1.33,0.52-2l0.78-3.076a0.777,0.777,0,0,1,.85-0.692A0.682,0.682,0,0,1,1361.57,950.546Zm6.59,4.746h-3.47v2.681h3.46v1.515h-0.94c-1.03,0-2.06,0-3.09,0a0.784,0.784,0,0,1-.93-0.89v-8.063a0.748,0.748,0,0,1,.76-0.877c1.39-.017,2.79-0.006,4.19-0.006v1.438h-3.47v2.7h3.49v1.509Z" transform="translate(-1339 -937)"/>
+                </svg>
+                <p class="advantages__text">
+                  Live ставки
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__wrapper">
+            <div class="page-footer__payment">
+              <ul class="page-footer__list">
+                <li class="page-footer__item page-footer__item--visa">
+                  <a class="page-footer__link page-footer__link--visa" href="#" aria-label="Переход на сайт Виза">
+                    <span class="visually-hidden">Виза</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="26" viewBox="0 0 82 26">
+                      <image width="82" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAaCAQAAACOLsMRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAR8RCgyapvCrAAAEkUlEQVRYw62XfWiXVRTHP785V/NlEq5MV04ty9VMam4zKjK8CsJ6IVPHsMiUlDKR/gkiUQT/iP7SSWRoRgRiFK7UsekZrMJm6pDalpH4Qor5kjEna+be+uN5fs/Ouc/zZETnn98533vuud97nnvuPb+Mq2MOo/Clh3pWy3kfdo3MU+Ya2QRuA2sVVi27lP/tLOYxHmY8BUAXZ/iRZvbIpdiKuDdZxeTIvCDjAQaBDLg85lHDAvK8WQ0y3wtTzGkykdnNBOkCt5vnlFOpdITek9jIQobH6bBPqmIUl/KRB02UswHJHJAbsldquJsNXDVO89xIb9rLiiJ8Il0BLYX18Uu46CLaqUmkSNZHUczhnZhXZVbJySpySdYxiT+UUw6PeIFeMUFqAVw+UxR2XHpDijvxtzgk7TFkvokSSHmMJIB0IsluAUsmamc5DkCJifETgCtmh43syc8x5I0EryiTud5AI4tSSS4z1pbwt9SgbQC8xQiFdbODQ3QznMlUMJeCYCtq91NNOWalzA2T/iSS+401UwUqNOVxhj2hNt3MCIpGb/QaZXJCxcnnGen0Vn3dnPWsjGJaEM/7KHIuXCaQe91tkb7EVP8WGQi1B0yAdnBFjFXIYU0RpEdfUQBuFEvNpoZkVvATPzlpudQfu4cdkV5q8FNAvonwhHuUf5YXKYj0ftarkfI0ko1JJF2FIfOphLeAKzDFdFwGgPMMKCyPZrfO5ZMiLsMqZe6jTlmVaSS/4Xp8Lyw3PrWR9qDB2wDkT+9r5LGek26F889/ILPNgdkmpxh6jaYHm4uRlB6+9Um6kVQr7Gtpi3Rb29nzvJZ+L+x4PqDDPZVAcrXSz1EPtET2sOCmTrrNGpR+l7sTWMjoxDwmZhLkKCsZjMW9jyb3toXcRJ5W5nbpNyShIo3kAWOVYYvmLF8qy15A0f0n21hAZyxyho1ujUFeY1ikD7IdgINqvDKFpLShu59Kdz+PK/t96UvJ5FX5VUXZTQnbY58d3nVTozzearbfIGcBaGVohfK0TNoKLzOB/gp3GyxSyDg11mGDyAVZzgy+8mLnqSKsplCNfBjO6+FYhE2ZW5hGUlfnTF5S1k65rCxbNvG2AemQZ6kybQsM3Zv6xf6NvZF+SOEV8WcxkAMMRg/VHWZks7GSa9snus8toV4B4dXtZpkua4DPXZQ/Q7I+kaRcca363Y7kOzlm7JtmMnEkm9fVBi2iKHFuJakNVUMiWuvZ9t1uAzfCtblltll2OdiL5wiAG8cL/BspT/vcsD+hUz7PFx7ykNJ/l8vANErZRq1r4iin6eIWprCYGWbWZwCsTOnafRk79540ki1cMxc4wNag644yVMQYm0eyV1I+VVSlRK6TVnDDedXk1u8n63gy0itSSEqfazL9I/Sy1XNKOpHTbpKXk6wA4HkmKPRjv8N0LZpkepPf6Nm75KKH2CexPQHzpZXZ4Z9Z3fn0sivmeVjplbmpARv5wdibYh4jjUcrkH7G4SLvsTn8m1bMaDX3oFyJeX+vxjMZ/mdxpcyhnBKKGUMu1+nkBEdoplFu/Jd4g8Dfi/g6J4maZFQAAAAASUVORK5CYII="/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-footer__item page-footer__item--mastercard">
+                  <a class="page-footer__link page-footer__link--mastercard" href="#" aria-label="Переход на сайт Мастеркард">
+                    <span class="visually-hidden">Мастеркард</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="24" viewBox="0 0 40 24">
+                      <image width="40" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAYCAQAAAAijXdLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAR4OAjmrCj2oAAADE0lEQVQ4y43Vb2hVdRzH8dc5d/feTap1VzKoMf8sbHcbqD2zS4Vzq4xQynow7Q+UBQsKrfRBQpEGYmJEUBIRFIQaRP7BULpLmnBphlmo+wOT9WCilCSTNOed3tODpdO5nfX5Pjr83ucN5/D9/r6BG5LLWq5ZVgZnHfODHYX+sfOWOZZr1qgK5/Q4YFu+53pDcJ2s3gcWG5/ILmsLJ2ips8VSN2e/1/O9Nwlz7T6UMnEuaK/gUxWTnBetym+9QZh7zzoxCXrLs+KzMf/WNWGu3SfxdCiQkIiHXslvJSBX7zfpGPB8omLUlYoXFs3N94XYHKuTOJlMJCUlRfHClC0Euawe/zvl17fFRGkItcUTwdG0sfovlybF20IL0SSDRTK6xgFrg+mXjdUVjpvbUa51Atn72jSHmvxd6MagI4Uh581XZ5MjFqizt7A52B0NBY8HT5eG/erLqNMS2ZZD1tniXvN0edJrvrVYi/3u0hjkIoc8aqYVvndMl9MOedtjztjgD8+H/eHC0u6gQ9KZYHf0USrnjEr8LPSuO22zQMoVS/KrWj/3QohujSp8pVG9PZ6yXrVFDtrhpIYo3dkTNgfrpILO6OOoSrVKXLTJUh2G80WfOWiNl1BPmSHHNOhX45Q6b+jyhQEr1RQW554z08hDt10ZiBKispej2TjtJ/X26DbgHsXWW9Ua8ZftyBoKHdetCSv0ma/WUruUq7Ii94BMYUfwjxcTNWWzEr90Dpcqg9s93HG/O9Q44T5DRjRJezb/jHdaq2V0B7n1VitXVOG8CpecU4WzSmqM+N2MIB1cEEobjqYlJeg3zd1OqVRSVDIdg6oV3WLD1I09XJ4MphjiGxq70Gtv/HAMRxeN1shUuu/yvSHWxHQ+lJUVU1JSyuJ1RW8SUuizOp68fDISCaea41X5PqPX0uDh2qQHY9BMaerbcGN+E65Sgwdq/9Q66TsXrEzv9IjkpB/76qjOmGLwcO03ZplzExzZaVnhx4Gjs782Q/0Euv2eyO+7+jDut+Sy2jRruLZGD9g+bo0u02qejEnW6L875ADEfMNlvgAAAABJRU5ErkJggg=="/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-footer__item page-footer__item--privat24">
+                  <a class="page-footer__link page-footer__link--privat24" href="#" aria-label="Переход на сайт Приват24">
+                    <span class="visually-hidden">Приват24</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="26" viewBox="0 0 146 26">
+                      <image width="146" height="26" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-footer__item page-footer__item--liqpay">
+                  <a class="page-footer__link page-footer__link--liqpay" href="#" aria-label="Переход на сайт Лигпэй">
+                    <span class="visually-hidden">Лигпэй</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="29" viewBox="0 0 134 29">
+                      <image width="134" height="29" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-footer__item page-footer__item--sofort">
+                  <a class="page-footer__link page-footer__link--sofort" href="#" aria-label="Переход на сайт Софорт">
+                    <span class="visually-hidden">Софорт</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="24" viewBox="0 0 132 24">
+                      <image width="132" height="24" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-footer__item page-footer__item--currency">
+                  <a class="page-footer__link page-footer__link--currency" href="#" aria-label="Переход на сайт Курсы валют">
+                    <span class="visually-hidden">Валюты</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="31px">
+                      <g>
+                      <path fill-rule="evenodd" fill="rgb(68, 68, 68)" d="M65.185,30.145 C57.033,30.145 50.370,23.382 50.370,15.063 C50.370,6.744 57.014,-0.000 65.185,-0.000 C73.356,-0.000 80.000,6.764 80.000,15.082 C80.000,23.401 73.356,30.145 65.185,30.145 ZM66.941,14.771 C67.495,14.460 67.991,14.091 68.450,13.722 L71.275,13.722 L71.275,11.234 L69.939,11.234 C69.939,11.176 69.958,11.117 69.958,11.059 C69.977,11.001 69.977,10.923 69.977,10.845 C69.977,9.232 69.500,7.969 68.545,7.055 C67.610,6.122 66.235,5.656 64.498,5.656 C63.448,5.656 62.550,5.773 61.787,6.025 C61.023,6.258 60.412,6.550 59.916,6.841 L61.004,9.776 C61.443,9.543 61.882,9.329 62.359,9.154 C62.856,8.979 63.428,8.882 64.154,8.882 C64.898,8.882 65.490,9.018 65.872,9.290 C66.292,9.563 66.483,9.951 66.483,10.495 C66.483,10.729 66.445,10.981 66.368,11.195 L58.503,11.195 L58.503,13.702 L63.467,13.702 C62.951,13.975 62.455,14.286 61.958,14.597 C61.462,14.907 61.004,15.277 60.622,15.685 L58.503,15.685 L58.503,18.231 L59.477,18.231 L59.477,18.600 C59.477,20.194 59.973,21.438 60.947,22.332 C61.920,23.226 63.448,23.693 65.509,23.693 C66.865,23.693 67.953,23.518 68.793,23.226 C69.614,22.935 70.244,22.624 70.645,22.371 L69.576,19.417 C69.118,19.650 68.583,19.902 67.972,20.136 C67.361,20.369 66.560,20.486 65.605,20.486 C64.669,20.486 63.982,20.272 63.600,19.922 C63.180,19.533 62.989,19.106 62.989,18.561 C62.989,18.406 62.989,18.289 63.009,18.211 L71.275,18.211 L71.275,15.724 L65.357,15.724 C65.872,15.413 66.388,15.082 66.941,14.771 ZM50.790,24.470 C48.079,27.949 43.898,30.165 39.220,30.165 C31.049,30.165 24.405,23.401 24.405,15.082 C24.405,6.764 31.068,-0.000 39.220,-0.000 C43.898,-0.000 48.079,2.216 50.790,5.714 C49.090,8.416 48.098,11.623 48.098,15.082 C48.098,18.542 49.090,21.749 50.790,24.470 ZM43.344,6.550 C43.039,6.472 42.695,6.414 42.370,6.375 C42.027,6.336 41.683,6.297 41.358,6.278 C41.034,6.258 40.728,6.239 40.461,6.239 C39.526,6.239 38.647,6.336 37.807,6.550 C36.967,6.764 36.204,7.094 35.497,7.502 C34.810,7.930 34.218,8.435 33.703,9.057 C33.206,9.660 32.786,10.379 32.519,11.215 L31.240,11.215 L30.209,14.169 L32.137,14.169 C32.118,14.266 32.118,14.344 32.118,14.402 C32.118,14.460 32.118,14.519 32.118,14.577 C32.118,14.635 32.118,14.713 32.118,14.791 C32.118,14.869 32.118,14.966 32.061,15.024 L31.030,15.024 L30.094,17.920 L32.423,17.920 C32.633,18.717 32.958,19.397 33.397,20.039 C33.836,20.680 34.352,21.224 34.963,21.652 C35.574,22.079 36.261,22.429 37.044,22.663 C37.826,22.896 38.666,23.012 39.583,23.012 C40.480,23.012 41.244,22.935 41.912,22.798 C42.580,22.624 43.096,22.468 43.478,22.254 L42.809,18.367 C42.523,18.542 42.122,18.678 41.626,18.795 C41.110,18.911 40.614,18.970 40.098,18.970 C39.545,18.970 39.010,18.872 38.476,18.697 C37.960,18.523 37.597,18.250 37.406,17.920 L40.614,17.920 L41.568,15.024 L36.776,15.024 C36.757,14.907 36.757,14.830 36.757,14.752 C36.757,14.694 36.757,14.616 36.757,14.538 C36.757,14.480 36.757,14.421 36.757,14.363 C36.757,14.305 36.757,14.227 36.776,14.130 L41.798,14.130 L42.809,11.176 L37.674,11.176 C37.807,10.981 37.941,10.826 38.132,10.709 C38.304,10.592 38.552,10.495 38.781,10.398 C39.010,10.320 39.277,10.243 39.545,10.204 C39.812,10.165 40.079,10.145 40.347,10.145 C40.728,10.145 41.129,10.184 41.588,10.262 C42.027,10.340 42.408,10.437 42.695,10.534 L44.165,6.783 C43.936,6.686 43.650,6.608 43.344,6.550 ZM25.703,25.733 C23.030,28.474 19.308,30.184 15.203,30.184 C7.032,30.184 0.388,23.440 0.388,15.102 C0.388,6.764 7.013,0.019 15.184,0.019 C19.288,0.019 22.992,1.730 25.665,4.470 C23.450,7.405 22.114,11.098 22.114,15.082 C22.114,19.067 23.450,22.760 25.703,25.733 ZM17.570,7.191 C16.597,6.822 15.642,6.589 14.649,6.531 L14.649,4.898 L12.377,4.898 L12.377,6.569 C11.766,6.667 11.174,6.880 10.583,7.133 C9.991,7.386 9.494,7.736 9.036,8.163 C8.616,8.591 8.253,9.096 7.986,9.718 C7.738,10.321 7.604,11.020 7.604,11.817 C7.604,12.497 7.719,13.061 7.929,13.566 C8.139,14.052 8.464,14.480 8.826,14.830 C9.189,15.180 9.609,15.490 10.105,15.724 C10.602,15.977 11.098,16.190 11.633,16.365 C12.186,16.560 12.645,16.715 13.007,16.832 C13.370,16.968 13.656,17.084 13.866,17.182 C14.057,17.279 14.210,17.395 14.286,17.492 C14.363,17.590 14.401,17.706 14.401,17.862 C14.401,18.134 14.267,18.328 14.038,18.425 C13.809,18.523 13.523,18.581 13.236,18.581 C12.931,18.581 12.587,18.542 12.282,18.464 C11.976,18.387 11.652,18.270 11.365,18.134 C11.060,17.978 10.774,17.823 10.525,17.648 C10.258,17.454 10.048,17.279 9.876,17.084 L6.669,20.563 C7.375,21.166 8.196,21.691 9.170,22.079 C10.144,22.487 11.136,22.721 12.167,22.798 L12.167,24.489 L14.401,24.489 L14.401,22.779 C15.107,22.701 15.756,22.546 16.406,22.293 C17.055,22.041 17.608,21.691 18.105,21.224 C18.582,20.758 18.983,20.233 19.269,19.572 C19.575,18.950 19.728,18.192 19.728,17.356 C19.728,16.540 19.537,15.899 19.212,15.335 C18.888,14.791 18.468,14.324 17.933,13.955 C17.398,13.605 16.845,13.294 16.215,13.061 C15.585,12.808 15.012,12.614 14.439,12.439 C13.905,12.264 13.485,12.128 13.256,12.011 C13.007,11.875 12.893,11.701 12.893,11.467 C12.893,11.195 13.007,11.020 13.236,10.923 C13.466,10.826 13.790,10.768 14.172,10.768 C14.592,10.768 15.050,10.884 15.566,11.098 C16.081,11.312 16.520,11.662 16.864,12.089 L20.148,8.785 C19.403,8.105 18.544,7.561 17.570,7.191 Z"/>
+                      </g>
+                    </svg>
+                   </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright">
+              <span class="page-footer__text">Copyright © 2018</span>
+              <a class="copyright__link" href="https://www.bazabet.com" aria-label="Переход на сайт Bazabet">Bazabet.com.ua.</a>
+              <span class="page-footer__rights">Все права защищены.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/picturefill.js"></script>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
